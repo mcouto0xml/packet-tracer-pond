@@ -29,13 +29,13 @@ Com a topologia montada e os IPs configurados, foi realizado o teste de conectiv
 
 Uma Simple PDU foi enviada do PC0 para o PC2 utilizando o modo de simulação do Packet Tracer. As capturas abaixo documentam o passo a passo da propagação:
 
-![PDU saindo do PC0 em direção ao Hub](images/hub-simu1.png)
+![PDU saindo do PC0 em direção ao Hub](images/hub-simu2.png)
 *Figura 2 — PDU enviada pelo PC0 chega à porta de entrada do Hub.*
 
-![Hub replicando o sinal para todas as portas](images/hub-simu2.png)
+![Hub replicando o sinal para todas as portas](images/hub-simu3.png)
 *Figura 3 — O Hub replica o sinal elétrico para todas as portas (PC1 e PC2 recebem o quadro simultaneamente).*
 
-![PC2 recebendo a PDU e PC1 descartando](images/hub-simu3.png)
+![PC2 recebendo a PDU e PC1 descartando](images/hub-simu4.png)
 *Figura 4 — PC2 aceita o quadro (destinatário correto); PC1 analisa e descarta o quadro (endereço MAC não coincide).*
 
 ---
@@ -86,7 +86,7 @@ Durante essa fase de estabilização, o Switch também popula sua tabela CAM (Co
 A mesma Simple PDU foi enviada novamente do PC0 para o PC2 com o Switch em operação:
 
 ![PDU saindo do PC0 em direção ao Switch](images/swith-simu1.png)
-*Figura 6 — PDU enviada pelo PC0 chega à porta de entrada do Switch.*
+*Figura 6 — PDU enviada pelo PC0.*
 
 ![Switch consultando tabela CAM](images/switch-simu2.png)
 *Figura 7 — O Switch consulta sua tabela CAM, identifica a porta associada ao MAC de PC2 e encaminha o quadro exclusivamente para essa porta.*
