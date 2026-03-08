@@ -158,3 +158,4 @@ A principal distinção prática observada na simulação foi que o Hub não con
 **Parte 2 -** `src/parte2`
 
 ## Link para o vídeo
+https://youtu.be/xMCa89Raolw
